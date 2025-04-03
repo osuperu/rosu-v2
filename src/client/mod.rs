@@ -713,7 +713,7 @@ impl OsuRef {
         #[cfg(feature = "metrics")]
         let start = std::time::Instant::now();
 
-        let mut url = format!("http://127.0.0.1:10000/api/v2/{path}");
+        let mut url = format!("http://127.0.0.1:10001/api/v2/{path}");
 
         if let Some(ref query) = query {
             url.push('?');
